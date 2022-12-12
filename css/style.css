@@ -18,3 +18,14 @@ nav{
 label{
     font-weight: bold;
 }
+
+#Withdrawl-form{
+    display: none;
+    
+}
+
+button{
+    background-color: cornflowerblue;
+    color: white;
+    border-radius: 7px;
+}
