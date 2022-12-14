@@ -27,5 +27,8 @@ label{
 button{
     background-color: cornflowerblue;
     color: white;
+    width: 150px;
+    height: 75px;
     border-radius: 7px;
+    border-color: wheat;
 }
