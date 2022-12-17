@@ -32,3 +32,7 @@ button{
     border-radius: 7px;
     border-color: wheat;
 }
+
+h3,strong{
+    color: white;
+}
