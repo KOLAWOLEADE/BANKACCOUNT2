@@ -20,7 +20,7 @@ label{
 }
 
 #Withdrawl-form{
-    display: none;
+    /* display: none; */
     
 }
 
@@ -35,4 +35,54 @@ button{
 
 h3,strong{
     color: white;
+}
+
+
+#Opening-for{
+    display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* COPIED CSS */
+
+
+.submit-area {
+	padding: 30px;
+	margin-top: 50px;
+	border-radius: 10px;
+	box-shadow: 5px 5px gray;
+  color: white;
+  background-color: royalblue;
+}
+
+#account-area {
+	margin-top: 5%;
+}
+
+.deposit {
+	background-color: slateblue;
+}
+
+.withdraw {
+	background-color: lightsalmon;
+}
+
+.balance {
+	background-color: tomato;
+}
+
+.status {
+	margin: 0 20px;
+	color: white;
+	padding: 20px;
+	border-radius: 10px;
 }

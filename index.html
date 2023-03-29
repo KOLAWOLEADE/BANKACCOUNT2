@@ -23,10 +23,10 @@
             <div class="col-6">
 
                 <nav>
-                    <a href="index" id="nav"> Home</a>
-                    <a href="about" id="nav">About</a>
-                    <a href="Service" id="nav">Service</a>
-                    <a href="Contact" id="nav">Contact</a>
+                    <a href="index.html" id="nav"> Home</a>
+                    <a href="about.html" id="nav">About</a>
+                    <a href="service.html" id="nav">Service</a>
+                    <a href="contact.html" id="nav">Contact</a>
                 </nav>
 
             </div>
@@ -42,12 +42,13 @@
                 <img src="Image/bank image 2.jpg" alt="Bank image">
 
             </div>
+            <!-- DEPOSITOR FORM  -->
             <div class="col-6">
                 <form class="form-group">
                     <h2> Depositor Form </h2>
 
-                    <label for="Date And Time"> Date</label><br>
-                    <input type="datetime" name="" id="" class="form-control" placeholder="Date And Time" required ><br>
+                    <label for="Date"> Date</label><br>
+                    <input type="date" name="Date" id="Date" class="form-control" placeholder="Date And Time" required ><br>
 
                     <label for="Depositor ">First Name</label><br>
                     <input type="text" class="form-control" placeholder="   Depositor First Name Name"  id="new-first-name" required><br>
@@ -57,7 +58,7 @@
 
 
                     <label for="Amount">Amount</label><br>
-                    <input type="text" class="form-control" placeholder="Amount To Deposit" id="new-amount" required><br>
+                    <input type="text" class="form-control" placeholder="Amount To Deposit" id="deposit" required><br>
 
                     <label for="Account Name">Account Name</label><br>
                     <input type="text" class="form-control" placeholder="Account Name" required><br>
@@ -65,42 +66,71 @@
                     <label for="Account Number">Account Number</label><br>
                     <input type="text" class="form-control" placeholder="Account Number" required><br>
 
+                    <button class="btn-success">Deposit</button>
+
 
                 </form>
 
-                <p><strong>Would you like to open account witn us? <button>Signup here</button></strong></p>
+                <a href="singup.html" <p><strong>Would you like to open account witn us? <button class="btn">Signup here</button></strong></p>><p><strong>Would you like to open account witn us? <button class="btn">Signup here</button></strong></p></a>
 
                 <h3> Click here to withdrawl Form</h3>
+
+
+
+
+
+
+
+<!-- 
+                ACCOUNT OPENING 
 
                 <form class="form-group" id="Opening-form">
 
                     <h3>New Account Opening Form </h3>
 
-                    <label for="Date And Time"> Date</label><br>
+                    <label for="Date And Time"> Date</label><br><br>
                     <input type="date" name="" id="" class="form-control" placeholder="Date And Time" required ><br>
 
-                    <label for="First Name ">First Name</label><br>
+                    <label for="First Name ">First Name</label><br><br>
                     <input type="text" class="form-control" placeholder="   First Name" required><br>
 
-                    <label for="Last Name">Last Name</label><br>
+                    <label for="Last Name">Last Name</label><br><br>
                     <input type="text" class="form-control" placeholder="Last Name" required><br>
 
-                    <label for="EMAIL">EMAIL</label>
+                    <label for="EMAIL">EMAIL</label><br><br>
                     <input type="email" name="EMAIL" id="Email" placeholder="Email" class="form-control"><br>
 
-                    <label for="Date of birth">Date of Birth</label><br>
+                    <label for="Date of birth">Date of Birth</label><br><br>
                     <input type="text" class="form-control" placeholder="Date of Birth " required><br>
 
-                    <label for="Initial Deposit">Initial Deposit</label><br>
+                    <label for="Gender">Gender</label><br><br>
+                    <input type="radio" name="Gender" id="Male">
+                    <b>Male</b>
+                    <input type="radio" name="Gender" id="Female">
+                    <b>Female</b><br><br>
+
+                    <label for="Marital status">Marital status</label><br><br>
+                    <input type="radio" name="Marital status" id="Marital status" placeholder="Narital status"> 
+                    <b>Single</b>
+                    <input type="radio" name="Marital status" id="Marital status" placeholder="Narital status"> 
+                    <b>Married</b>
+                    <input type="radio" name="Marital status" id="Marital status" placeholder="Narital status"> 
+                    <b>Divorce</b><br><br>
+
+                    <input type="checkbox" name="" id="">
+
+                    <label for="Initial Deposit">Initial Deposit</label><br><br>
                     <input type="text" class="form-control" placeholder="Initial Deposit" required><br>
 
+                    <button type="submit" id="Accout-opening">Submit</button> 
 
 
 
 
-                </form>
 
+                </form> -->
 
+                <!-- WITHDRAWL FORM  -->
 
                 <form class="form-group" id="Withdrawl-form">
                     
@@ -114,6 +144,8 @@
                     <label for="Amount">Amount</label><br>
                     <input type="text" class="form-control" aria-placeholder="Amount" required><br>
 
+                    <button class="btn-danger">Withdraw</button>
+
 
                 </form>
 
@@ -123,7 +155,55 @@
         </div>
         
 
-    </div>
+    </div><br><br><br>
+
+<!-- 
+    <div id="account-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-3">
+                    <div class="deposit status">
+                        <h5>Deposit</h5>
+                        <h2>$ <span id="current-deposit">00</span></h2>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="withdraw status">
+                        <h5>Withdraw</h5>
+                        <h2>$ <span id="current-withdraw">00</span></h2>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-3">
+                    <div class="balance status">
+                        <h5>Balance</h5>
+                        <h2>$ <span id="current-balance">1240</span></h2>
+                    </div>
+                 </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="submit-area">
+                        <h4>Deposit Amount</h4>
+                        <input id="deposit-amount" type="text" class="form-control" placeholder="Enter deposit amount"><br>
+                        <button id="deposit-btn" class="btn btn-success">Deposit</button>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6">
+                    <div class="submit-area">
+                        <h4>Withdraw Amount</h4>
+                        <input id="withdraw-amount" type="text" class="form-control" placeholder="Enter withdraw amount"><br>
+                        <button id="withdraw-btn" class="btn btn-success">Withdraw</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
 
     <footer>
 
